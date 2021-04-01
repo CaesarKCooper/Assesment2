@@ -1,4 +1,5 @@
-public class Motorbike extends Vehicle implements IDriveable{
+public class Motorbike extends Vehicle{
+
 
     public Motorbike(String name, double price) {
         super(name, price);
@@ -9,8 +10,9 @@ public class Motorbike extends Vehicle implements IDriveable{
 
     }
 
+
     @Override
-    public int milesPerHour() {
-        return 0;
+    public String toString() {
+        return name + " : " + price;
     }
 }
